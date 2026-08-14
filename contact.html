@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- I titled this page 'Contact' so users know this is where they can find us -->
+    <title>Onalenna Jewels - Contact</title>
+</head>
+
+<body bgcolor="#fce4ec">
+
+    <!-- Header with logo and brand name -->
+    <header>
+        <center>
+            <img src="images/logo-placeholder.png" alt="Onalenna Jewels logo" width="80" height="80">
+            <h1><font color="#d4477b">Onalenna Jewels</font></h1>
+            <p><font color="#555555" size="4">Elegance Handcrafted in South Africa</font></p>
+        </center>
+    </header>
+
+    <!-- Navigation menu -->
+    <center>
+        <nav>
+            <b>
+                <a href="index.html">Home</a> <font color="#d4477b">|</font>
+                <a href="about.html">About Us</a> <font color="#d4477b">|</font>
+                <a href="products.html">Our Collection</a> <font color="#d4477b">|</font>
+                <a href="enquiry.html">Custom Enquiry</a> <font color="#d4477b">|</font>
+                <a href="contact.html">Contact</a>
+            </b>
+        </nav>
+    </center>
+
+    <hr color="#d4477b" width="70%">
+
+    <!-- Main content starts here -->
+    <main>
+        <center>
+            <h2><font color="#d4477b">Get in Touch</font></h2>
+            <!-- I mentioned we have two studios so customers know they can visit us in person -->
+            <p><font color="#333333" size="3">We have two studio locations for your convenience.</font></p>
+        </center>
+
+        <!-- Location 1: Johannesburg -->
+        <h3><font color="#d4477b">Studio 1: Johannesburg (Head Office)</font></h3>
+        <p><font color="#333333">
+            123 Crafters Lane,<br>
+            Sandton, Johannesburg,<br>
+            2196, South Africa
+        </font></p>
+
+        <!-- Location 2: Cape Town - Required by the assignment to have more than 1 location -->
+        <h3><font color="#d4477b">Studio 2: Cape Town (Pop-Up Store)</font></h3>
+        <p><font color="#333333">
+            45 Beach Road,<br>
+            Sea Point, Cape Town,<br>
+            8005, South Africa
+        </font></p>
+
+        <!-- I added an opening hours table so customers know when we are open -->
+        <h3><font color="#d4477b">Opening Hours</font></h3>
+        <center>
+            <table border="2" cellpadding="8" width="60%" bgcolor="#ffffff">
+                <tr bgcolor="#d4477b">
+                    <th><font color="white"><b>Day</b></font></th>
+                    <th><font color="white"><b>Johannesburg</b></font></th>
+                    <th><font color="white"><b>Cape Town</b></font></th>
+                </tr>
+                <tr>
+                    <td><font color="#333333">Monday - Friday</font></td>
+                    <td><font color="#333333">9:00 AM - 6:00 PM</font></td>
+                    <td><font color="#333333">10:00 AM - 5:00 PM</font></td>
+                </tr>
+                <tr bgcolor="#f5f0eb">
+                    <td><font color="#333333">Saturday</font></td>
+                    <td><font color="#333333">9:00 AM - 2:00 PM</font></td>
+                    <td><font color="#333333">9:00 AM - 1:00 PM</font></td>
+                </tr>
+                <tr>
+                    <td><font color="#333333">Sunday</font></td>
+                    <td><font color="red">Closed</font></td>
+                    <td><font color="red">Closed</font></td>
+                </tr>
+            </table>
+            <br>
+        </center>
+
+        <!-- I added clickable phone numbers and email addresses for easy contact -->
+        <h3><font color="#d4477b">Call or Email</font></h3>
+        <p>
+            <font color="#333333"><b>Phone (JHB):</b> <a href="tel:+27111234567">+27 11 123 4567</a></font><br>
+            <font color="#333333"><b>Phone (CPT):</b> <a href="tel:+27219876543">+27 21 987 6543</a></font><br>
+            <font color="#333333"><b>WhatsApp:</b> <a href="tel:+27821234567">+27 82 123 4567</a></font><br>
+            <font color="#333333"><b>Email:</b> <a href="mailto:info@onalennajewels.co.za">info@onalennajewels.co.za</a></font>
+        </p>
+
+        <!-- I added a contact form because the rubric says the Contact page must have one -->
+        <h3><font color="#d4477b">Send Us a Message</font></h3>
+        <form action="#">
+            <label for="contact-name"><font color="#d4477b"><b>Your Name:</b></font></label><br>
+            <input type="text" id="contact-name" name="name" placeholder="Your full name" size="40" required><br><br>
+
+            <label for="contact-email"><font color="#d4477b"><b>Your Email:</b></font></label><br>
+            <input type="email" id="contact-email" name="email" placeholder="you@example.com" size="40" required><br><br>
+
+            <label for="subject"><font color="#d4477b"><b>Subject:</b></font></label><br>
+            <select id="subject" name="subject">
+                <option value="general">General Enquiry</option>
+                <option value="order">Order Question</option>
+                <option value="feedback">Feedback</option>
+            </select><br><br>
+
+            <label for="contact-message"><font color="#d4477b"><b>Message:</b></font></label><br>
+            <textarea id="contact-message" name="message" rows="5" cols="40" placeholder="Type your message here..."></textarea><br><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+
+        <!-- I replaced the placeholder image with an actual Google Maps iframe -->
+        <h3><font color="#d4477b">Find Us Here</font></h3>
+        <center>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14358.166809745393!2d28.043538!3d-26.107568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9576e9fcb9a3b7%3A0x1c5f3b2b6e7f6b1!2sSandton%2C%20Johannesburg%2C%202196!5e0!3m2!1sen!2sza!4v1700000000000" 
+                width="600" 
+                height="450" 
+                style="border:4px solid #d4477b;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p><font color="#888888" size="2"><i>Our Johannesburg studio location.</i></font></p>
+        </center>
+    </main>
+
+    <hr color="#d4477b" width="70%">
+
+    <!-- Footer with copyright and social media links -->
+    <footer>
+        <center>
+            <p>
+    <font color="#888888">Follow us: 
+    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a> | 
+    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | 
+    <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
+    </font>
+</p>
+        </center>
+    </footer>
+
+</body>
+</html>
