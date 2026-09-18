@@ -4,7 +4,7 @@ PART 2
 
 - Name: Onalennia Sebela
 - Module: WEDE5020 Web Development (Introduction)
-- Assessment: Part 1 POE
+- Assessment: Part 2 POE
 
 ## Project Overview
 
