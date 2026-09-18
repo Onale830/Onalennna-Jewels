@@ -1,0 +1,508 @@
+/* I set base styles for the entire website */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fce4ec;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fce4ec;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #d4477b;
+    font-size: 2.5rem;
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 10px 0 5px 0;
+}
+
+header p {
+    color: #555555;
+    font-size: 1.2rem;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+}
+
+nav {
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d4477b;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #d4477b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
+
+h3 {
+    color: #d4477b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
+
+p {
+    color: #333333;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+ul, ol {
+    padding-left: 40px;
+    margin: 15px 0;
+}
+
+li {
+    color: #333333;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/* I fixed the image sizes so they scale properly */
+.hero-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #d4477b;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 500px;
+}
+
+.product-image {
+    border: 4px solid #d4477b;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+}
+
+.workshop-image {
+    border: 4px solid #d4477b;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+}
+
+/* I wrapped each product in a card with hover effect */
+.product-card {
+    background-color: #faf6f0;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    border-color: #d4477b;
+    box-shadow: 0 8px 20px rgba(212, 71, 123, 0.3);
+    transform: translateY(-5px);
+}
+
+.product-card h3 {
+    margin-top: 0;
+}
+
+.product-card p {
+    margin-bottom: 0;
+}
+
+/* Map container */
+.map-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.map-container iframe {
+    border: 4px solid #d4477b;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.map-container p {
+    color: #888888;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    max-width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+table th {
+    background-color: #d4477b;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+}
+
+table td {
+    color: #333333;
+    padding: 10px;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #f5f0eb;
+}
+
+table tr:hover {
+    background-color: #fce4ec;
+    transition: background-color 0.3s ease;
+}
+
+/* Form styles */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+form label {
+    color: #d4477b;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="number"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form input[type="date"]:focus,
+form input[type="number"]:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #d4477b;
+    outline: 2px solid #d4477b;
+    outline-offset: 2px;
+}
+
+form input[type="submit"] {
+    background-color: #d4477b;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #b83a66;
+}
+
+form input[type="radio"] {
+    margin-right: 8px;
+}
+
+form input[type="radio"] + label {
+    display: inline;
+    font-weight: normal;
+    color: #333333;
+}
+
+/* Blockquote styles */
+blockquote {
+    border-left: 4px solid #d4477b;
+    padding-left: 20px;
+    margin: 20px 40px;
+    font-style: italic;
+}
+
+blockquote p {
+    text-align: left;
+}
+
+.client-name {
+    color: #d4477b;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Call to action */
+.cta-link a {
+    color: #d4477b;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cta-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #fce4ec;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #888888;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #888888;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+footer a:hover {
+    color: #d4477b;
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #d4477b;
+    width: 70%;
+    margin: 20px auto;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 6px 8px;
+    }
+
+    main {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .product-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .workshop-image {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .product-card {
+        max-width: 100%;
+    }
+
+    table {
+        max-width: 100%;
+        font-size: 0.9rem;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+
+    form {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    blockquote {
+        margin: 15px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+        padding: 4px 6px;
+        display: inline-block;
+        margin: 2px 0;
+    }
+
+    main {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    ul, ol {
+        padding-left: 20px;
+    }
+
+    li {
+        font-size: 0.9rem;
+    }
+
+    .product-image {
+        max-width: 100%;
+    }
+
+    .workshop-image {
+        max-width: 100%;
+    }
+
+    .product-card {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    table th,
+    table td {
+        padding: 5px;
+    }
+
+    form {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+    }
+
+    blockquote {
+        margin: 10px;
+        padding-left: 10px;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    footer p {
+        font-size: 0.7rem;
+    }
+
+    footer a {
+        margin: 0 5px;
+        font-size: 0.8rem;
+    }
+}
