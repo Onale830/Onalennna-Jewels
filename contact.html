@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Onalenna Jewels at our Johannesburg or Cape Town studios. Send a message, view our map or call us directly.">
+    <meta name="keywords" content="Onalenna Jewels contact, Johannesburg jewellery studio, Cape Town pop-up store, jewellery shop contact, Sandton jeweller">
+    <meta name="author" content="Onalenna Jewels">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Onalenna Jewels - Contact</title>
+    <title>Contact Us | Onalenna Jewels</title>
 </head>
 
 <body>
 
-    <!-- Header with logo and brand name -->
     <header>
         <img src="images/logo-placeholder.png" alt="Onalenna Jewels logo">
         <h1>Onalenna Jewels</h1>
         <p>Elegance Handcrafted in South Africa</p>
     </header>
 
-    <!-- Navigation menu -->
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -27,14 +29,11 @@
 
     <hr>
 
-    <!-- Main content -->
     <main>
 
-        <!-- Page introduction -->
         <h2>Get in Touch</h2>
         <p>We have two studio locations for your convenience.</p>
 
-        <!-- Location 1: Johannesburg -->
         <h3>Studio 1: Johannesburg (Head Office)</h3>
         <p>
             123 Crafters Lane,<br>
@@ -42,7 +41,6 @@
             2196, South Africa
         </p>
 
-        <!-- Location 2: Cape Town -->
         <h3>Studio 2: Cape Town (Pop-Up Store)</h3>
         <p>
             45 Beach Road,<br>
@@ -50,7 +48,6 @@
             8005, South Africa
         </p>
 
-        <!-- Opening hours table -->
         <h3>Opening Hours</h3>
         <table>
             <thead>
@@ -79,7 +76,6 @@
             </tbody>
         </table>
 
-        <!-- Contact details -->
         <h3>Call or Email</h3>
         <p>
             <strong>Phone (JHB):</strong> <a href="tel:+27111234567">+27 11 123 4567</a><br>
@@ -88,9 +84,8 @@
             <strong>Email:</strong> <a href="mailto:info@onalennajewels.co.za">info@onalennajewels.co.za</a>
         </p>
 
-        <!-- Contact form -->
         <h3>Send Us a Message</h3>
-        <form action="#">
+        <form id="contact-form" action="#">
 
             <label for="contact-name">Your Name:</label>
             <input type="text" id="contact-name" name="name" placeholder="Your full name" required>
@@ -106,31 +101,22 @@
             </select>
 
             <label for="contact-message">Message:</label>
-            <textarea id="contact-message" name="message" rows="5" placeholder="Type your message here..."></textarea>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
 
             <input type="submit" value="Send Message">
 
         </form>
 
-        <!-- Google Map iframe -->
+        <div id="contact-error" class="error-message" style="display:none;"></div>
+        <div id="contact-response" class="success-message" style="display:none;"></div>
+
         <h3>Find Us Here</h3>
-        <div class="map-container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14358.166809745393!2d28.043538!3d-26.107568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9576e9fcb9a3b7%3A0x1c5f3b2b6e7f6b1!2sSandton%2C%20Johannesburg%2C%202196!5e0!3m2!1sen!2sza!4v1700000000000"
-                width="600"
-                height="450"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            <p>Our Johannesburg studio location.</p>
-        </div>
+        <div id="map"></div>
 
     </main>
 
     <hr>
 
-    <!-- Footer with copyright and social media -->
     <footer>
         <p>&copy; 2026 Onalenna Jewels. All rights reserved.</p>
         <p>
@@ -140,5 +126,7 @@
         </p>
     </footer>
 
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
