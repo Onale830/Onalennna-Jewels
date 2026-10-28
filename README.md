@@ -1,149 +1,156 @@
-PART 2
+# Onalenna Jewels
 
 ## Student Information
+- **Name:** Onalenna Sebela
+- **Module:** WEDE5020 - Web Development (Introduction)
+- **Module Code:** WEDE5020
 
-- Name: Onalennia Sebela
-- Module: WEDE5020 Web Development (Introduction)
-- Assessment: Part 2 POE
 
 ## Project Overview
+Onalenna Jewels is a handcrafted South African jewellery brand based in Johannesburg, with a pop-up store in Cape Town. This website serves as the brand's professional online presence. It showcases the jewellery collection, shares the brand story, allows customers to submit custom jewellery enquiries, and provides contact details for both studio locations.
 
-Onalenna Jewels is a handcrafted jewellery brand based in South Africa. I built this website to give the brand a proper online presence where customers can browse the collection, read the brand story, and send custom jewellery enquiries.
+The website is built with HTML5, CSS3, and JavaScript. It is fully responsive and deployed on Netlify.
 
-The website is built with plain HTML and one external CSS file. I focused on clean structure, readable content, and a soft pink colour scheme that matches the brand.
+## Live Website
+**Deployed URL:** https://onalennajewels.netlify.app
 
-## Website Goals
 
-- Give Onalenna Jewels a professional online home
-- Show the jewellery collection with images and prices in Rands
-- Let customers send custom design enquiries
-- Share the brand story, mission, and values
-- Make it easy to find both studio locations
+## Website Goals and Objectives
+- Provide a professional and elegant online presence for Onalenna Jewels.
+- Showcase products with images, descriptions, and prices in South African Rands (ZAR).
+- Allow customers to request custom pieces via a validated enquiry form.
+- Share the brand story, mission, vision, and core values.
+- Make it easy for customers to contact the Johannesburg and Cape Town studios.
+- Rank well on search engines through on-page SEO best practices.
 
-## Key Features
+## Key Features and Functionality
 
-- Five linked pages: Home, About Us, Our Collection, Custom Enquiry, Contact
-- One main navigation bar on every page
-- Four jewellery products with images, descriptions, and prices in ZAR
-- Comparison table on the Collection page
-- Custom enquiry form with name, email, phone, date, quantity, metal preference, budget, and design description
-- Contact form with subject dropdown and message box
-- Two studio locations with opening hours table
-- Embedded Google Map on the Contact page
-- Clickable social media links in every footer
-- Responsive design for desktop, tablet, and mobile
-- Hover effects on navigation links, product cards, table rows, and buttons
+### Pages
+- **Home** (`index.html`) - Hero image, welcome message, benefits, order process, customer testimonial.
+- **About Us** (`about.html`) - Brand story, mission, vision, core values with tab switching, founder profile, sustainability commitments.
+- **Our Collection** (`products.html`) - Four jewellery products with dynamic loading from JSON, search filter, sort dropdown, comparison table, and gallery with lightbox.
+- **Custom Enquiry** (`enquiry.html`) - Full form with JavaScript validation, price estimate response, and AJAX submission.
+- **Contact** (`contact.html`) - Two studio locations, opening hours table, contact details, contact form with validation and AJAX submission, Leaflet interactive map.
+
+### JavaScript Features
+- Enquiry form validation and price estimate calculation.
+- Contact form validation and AJAX submission via FormSubmit.
+- Product search filter that updates as the user types.
+- Sort dropdown for Price Low to High, Price High to Low, and Name A to Z.
+- Dynamic product loading from `products.json` using `fetch()`.
+- Gallery lightbox that opens clicked images in an overlay.
+- Tab switcher for Mission, Vision, and Core Values on the About page.
+- Leaflet interactive map with a marker on the Johannesburg studio.
+
+### SEO Implementation
+- Unique descriptive `<title>` tag on every page.
+- Meta description on every page.
+- Meta keywords on every page.
+- Meta author tag on every page.
+- Proper heading hierarchy (h1, h2, h3) throughout.
+- Descriptive alt text on all images.
+- Internal linking between all pages.
+- Clean URL structure.
+- `robots.txt` instructs search engines on what to crawl.
+- `sitemap.xml` helps search engines understand the site structure.
+- Mobile-friendly responsive design.
+- Optimised page speed through minimal dependencies.
+
+### Responsive Design
+- Desktop layout uses CSS Grid for the product cards.
+- Tablet breakpoint at 768px.
+- Mobile breakpoint at 480px.
+- Navigation, typography, layout, and images all adapt at each breakpoint.
+
+## File and Folder Structure
+<img width="739" height="349" alt="image" src="https://github.com/user-attachments/assets/f87d1cba-1f54-482a-bf89-1a76cf9b897e" />
 
 ## Timeline and Milestones
-
-| Week | Task | Deliverable |
-| :--- | :--- | :--- |
-| 1 | Research the brand and gather content | Organisation research |
-| 2 | Write the proposal, sitemap, and wireframes | Planning documents |
-| 3 | Build the five HTML pages | Functional HTML website |
-| 4 | Test HTML and navigation | Corrected HTML |
-| 5 | Write the external CSS file | Styled website |
-| 6 | Add responsive design | Mobile and tablet layouts |
-| 7 | Add JavaScript and form validation | Interactive website |
-| 8 | Final testing and SEO checks | Final website |
-| 9 | Prepare the GitHub repository | Final submission |
-
-## Sitemap
-
-<img width="476" height="229" alt="image" src="https://github.com/user-attachments/assets/ec1774e7-5457-4450-bf3e-f26d09b5d7d2" />
-
-Every page links to every other page through one navigation bar at the top.
-DESKTOP SCREENSHORT
-<img width="933" height="451" alt="image" src="https://github.com/user-attachments/assets/da31a34d-2d8c-411a-a8b2-ac8ca28e27c6" />
-MOBILE SCREENSHORT
-<img width="414" height="394" alt="image" src="https://github.com/user-attachments/assets/99debcf4-2672-4131-bf6f-634c7fc962a5" />
-TABLET SCREENSHORT
-<img width="524" height="421" alt="image" src="https://github.com/user-attachments/assets/8abac5ae-ef60-49b9-8efd-74acc5ca6058" />
-
-
-## File Structure
-
-OnalennaJewels/
-    index.html
-    about.html
-    products.html
-    enquiry.html
-    contact.html
-    css/
-        style.css
-    js/
-        (empty for now, JavaScript is added in Part 3)
-    images/
-        logo-placeholder.png
-        1 (1).jpg  (hero image)
-        1 (2).jpg  (silver bracelet)
-        1 (3).jpg  (diamond ring)
-        1 (5).jpg  (pearl earrings)
-        1 (6).jpg  (gold necklace)
-        1 (7).jpg  (workshop image)
-        map-placeholder.png
-
-## Part 1 Details
-
-- Five HTML pages built and linked together
-- Semantic HTML5 tags used on every page (header, nav, main, footer)
-- One navigation bar only, placed at the top, shown horizontally
-- Content added to every page, including text, images, lists, and tables
-- Comments added inside every page to explain the code
-- External CSS file linked from every page
-- Responsive design with media queries for tablet (768px) and mobile (480px)
-- Hover effects on interactive elements
-- Google Map embedded with an iframe on the Contact page
-
-Part 2 and Part 3 will follow in future submissions.
+- **Week 1** - Research Onalenna Jewels and gather content.
+- **Week 2** - Finalise proposal, sitemap and wireframes.
+- **Week 3** - Develop five HTML pages.
+- **Week 4** - Test HTML pages and navigation.
+- **Week 5** - Develop CSS styling.
+- **Week 6** - Improve responsive layout for mobile and desktop.
+- **Week 7** - Add JavaScript functionality and validation.
+- **Week 8** - Final testing, SEO checks and corrections.
+- **Week 9** - Prepare GitHub repository and documentation.
 
 ## Changelog
 
-2026-08-10: Created the project folder and set up the file structure.
+### Part 1 - Project Initiation and Planning (2026-08-14)
+- Created the five HTML pages (`index.html`, `about.html`, `products.html`, `enquiry.html`, `contact.html`).
+- Added HTML5 semantic structure: `<header>`, `<nav>`, `<main>`, `<footer>`.
+- Implemented consistent navigation across all five pages.
+- Added logo placeholder and six product images.
+- Added business content: brand story, mission, vision, values, product descriptions, prices in ZAR.
+- Set up GitHub repository and pushed initial code.
+- Created README.md with project overview, goals, and initial documentation.
 
-2026-08-11: Added index.html with a hero image, welcome text, call to action, and a customer testimonial.
+### Part 2 - CSS Styling and Responsive Design (2026-09-15 to 2026-09-20)
+- Implemented all Part 1 lecturer feedback. No outstanding items remained.
+- Created `css/style.css` and linked it to all five HTML pages.
+- Added a CSS reset (`* { margin: 0; padding: 0; box-sizing: border-box; }`) for cross-browser consistency.
+- Applied typography styles using Georgia for headings and Arial for body text.
+- Added base styles for body, header, nav, main, footer and hr.
+- Applied hover, focus, and active pseudo-classes to navigation links, buttons, form fields, and product cards.
+- Created a product grid layout using CSS Grid so product cards sit side by side on desktop.
+- Added media query for tablet at 768px, adjusting layout, font sizes, and image widths.
+- Added media query for mobile at 480px, adjusting navigation, typography, forms, and tables.
+- Added screenshot evidence of desktop, tablet, and mobile views to README.
 
-2026-08-11: Added about.html with the brand story, mission, vision, core values, and founder section.
-
-2026-08-12: Added products.html with four jewellery products, prices in ZAR, and a comparison table.
-
-2026-08-12: Added enquiry.html with a full custom design form.
-
-2026-08-13: Added contact.html with two studio locations, opening hours table, contact form, and Google Map iframe.
-
-2026-08-13: Created css/style.css and linked it to all five HTML pages.
-
-2026-08-13: Added typography styles. Headings use Georgia, body text uses Arial.
-
-2026-08-13: Added layout styles using max-width, margin, padding, and box-shadow.
-
-2026-08-13: Added hover effects on navigation links, product cards, table rows, and form buttons.
-
-2026-08-13: Added media queries for tablet and mobile sizes.
-
-2026-08-13: Set image sizes so they scale properly on smaller screens.
-
-2026-08-13: Fixed a colour mismatch on the Silver Bracelet price so all product prices use the same pink.
-
-2026-08-13: Updated the footer social media links so Instagram, Facebook, and TikTok open in a new tab.
+### Part 3 - Enhancing Functionality and SEO (2026-10-14 to 2026-10-24)
+- Implemented all Part 2 lecturer feedback fixes.
+  - **Default style code (was 4/5):** Added full CSS reset and consistent base styles across all elements.
+  - **Layout structure (was 4/5):** Product grid now uses CSS Grid with `auto-fit` for better alignment on all screen sizes.
+  - **Decoration and colour (was 4/5):** Added deeper shadows, consistent border radius, and improved spacing.
+  - **Image adjustments (was 3/5):** All images use `width: 100%` with `max-width` so they never overflow on smaller screens.
+  - **README (was 4/5):** Expanded with detailed entries for each part.
+  - **Changelog (was 4/5):** Now includes specific entries for every change made.
+- Created `js/script.js` with the following functionality:
+  - Enquiry form validation (name, email regex, phone regex, metal selection, date).
+  - Enquiry form price estimate calculation based on product type, metal, and quantity.
+  - Enquiry form AJAX submission via FormSubmit.
+  - Contact form validation and AJAX submission.
+  - Product search filter that updates as the user types.
+  - Sort dropdown with Price Low to High, Price High to Low, and Name A to Z.
+  - Dynamic product loading from `products.json` using `fetch()`.
+  - Gallery lightbox that opens clicked images in an overlay.
+  - Tab switcher for Mission, Vision, and Core Values on the About page.
+  - Leaflet interactive map with a marker on the Contact page.
+- Created `products.json` to store product data for dynamic loading.
+- Added SEO meta description, meta keywords, and meta author tags to all five pages.
+- Added unique descriptive page titles to all five pages.
+- Added descriptive alt text on all images.
+- Added gallery section with six images on the products page.
+- Added search input and sort dropdown on the products page.
+- Created `robots.txt` to instruct search engines.
+- Created `sitemap.xml` to help search engines understand the site structure.
+- Replaced Google Maps iframe with Leaflet interactive map using OpenStreetMap tiles.
+- Deployed website to Netlify.
 
 ## References
 
-GeeksforGeeks (2023) How to validate a phone number using regular expressions in Java. Available at: https://www.geeksforgeeks.org/how-to-validate-a-phone-number-using-regular-expressions-in-java/ (Accessed: 13 August 2026).
+### Technical References
+- Mozilla Developer Network (MDN) (2025) *HTML: HyperText Markup Language*. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 14 October 2026).
+- Mozilla Developer Network (MDN) (2025) *CSS: Cascading Style Sheets*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 14 October 2026).
+- Mozilla Developer Network (MDN) (2025) *JavaScript*. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript (Accessed: 14 October 2026).
+- Mozilla Developer Network (MDN) (2025) *Using Fetch*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch (Accessed: 14 October 2026).
+- Mozilla Developer Network (MDN) (2025) *Media Queries*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries (Accessed: 14 October 2026).
+- Mozilla Developer Network (MDN) (2025) *CSS Grid Layout*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout (Accessed: 14 October 2026).
 
-Mozilla Developer Network (MDN) (2025) HTML: HyperText Markup Language. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 13 August 2026).
+### Library and Service References
+- Leaflet (2025) *Leaflet - a JavaScript library for interactive maps*. Available at: https://leafletjs.com/ (Accessed: 14 October 2026).
+- OpenStreetMap (2025) *OpenStreetMap*. Available at: https://www.openstreetmap.org/ (Accessed: 14 October 2026).
+- FormSubmit (2025) *FormSubmit - Free HTML Form to Email Service*. Available at: https://formsubmit.co/ (Accessed: 14 October 2026).
+- Netlify (2025) *Netlify - Develop and Deploy Modern Web Projects*. Available at: https://www.netlify.com/ (Accessed: 14 October 2026).
 
-Mozilla Developer Network (MDN) (2025) CSS: Cascading Style Sheets. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 13 August 2026).
+### Academic and Standard References
+- World Wide Web Consortium (W3C) (2024) *Web Standards*. Available at: https://www.w3.org/standards/ (Accessed: 14 October 2026).
+- Google (2025) *Search Engine Optimization (SEO) Starter Guide*. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide (Accessed: 14 October 2026).
+- GeeksforGeeks (2023) *How to validate a phone number using regular expressions in Java*. Available at: https://www.geeksforgeeks.org/how-to-validate-a-phone-number-using-regular-expressions-in-java/ (Accessed: 14 October 2026).
 
-Mozilla Developer Network (MDN) (2025) Responsive design. Available at: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design (Accessed: 13 August 2026).
+### Image Sources
+- All product and hero images sourced from **Pexels.com** (royalty-free stock photography). Available at: https://www.pexels.com/ (Accessed: 14 October 2026).
+- Leaflet map tiles sourced from **OpenStreetMap contributors** under the Open Database License.
 
-Pexels (2026) Free stock photos. Available at: https://www.pexels.com (Accessed: 13 August 2026).
-
-World Wide Web Consortium (W3C) (2024) Web Standards. Available at: https://www.w3.org/standards/ (Accessed: 13 August 2026).
-
-## Notes
-
-- All jewellery images are sourced from Pexels.com, a royalty-free stock photo site.
-- The Google Map on the Contact page is embedded from Google Maps.
-- The regex used for the phone checker is attributed to GeeksforGeeks in the references above.
-- The logo is a placeholder. The final logo will replace images/logo-placeholder.png when it is ready.
